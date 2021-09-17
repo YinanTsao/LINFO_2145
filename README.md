@@ -1,2 +1,2 @@
 # LINFO2145-2021-2022
-Private repository for the students of LINFO2145 (Cloud Computing) of the class 2021-2022
+Private repository for the students of LINFO2145 (Cloud Computing) of the class 2021-2022. Students should create a private fork of this repository and pull instructions when they are made available.
