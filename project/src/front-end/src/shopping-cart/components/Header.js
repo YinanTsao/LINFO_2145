@@ -14,7 +14,7 @@ class Header extends Component{
             showCart: false,
             cart: this.props.cartItems,
             mobileSearch: false,
-            welcomeMsg: 'Welcome'
+            welcomeMsg: 'Welcome Yinan CAO for the Project'
         };
 				this.setAuthStatus = this.setAuthStatus.bind(this)
     }

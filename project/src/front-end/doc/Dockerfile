@@ -1,7 +1,7 @@
 # maintainer Raziel Carvajal-Gomez <raziel.carvajal-gomez@uclouvain.be>
 
 # this image relies on the nodejs image
-from node:alpine
+from node:16-alpine
 ENV PATH /usr/src/scapp-fe-doc/node_modules/.bin:${PATH}
 # your workspace
 workdir /usr/src/scapp-fe-doc

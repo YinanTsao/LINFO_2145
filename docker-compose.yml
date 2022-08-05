@@ -1,0 +1,28 @@
+version: "3"
+services:
+
+  db:
+    image: kv-storage-system
+    #build:
+      #context: ~/LINFO2145-2021-2022/project/src/back-end/storage
+      #dockerfile: Dockerfile
+      #build through dockerfile
+    ports:
+      - "3000:5984"
+    container_name: users-db
+
+  scapp-auth:
+    image: scapp-auth
+    ports:
+      - "3001:80"
+    #Links is expressing the dependency as well as depends_on
+    links:
+      - "db"
+    container_name: auth-service
+
+  scapp-frontend:
+    image: scapp-frontend
+    ports:
+      - "3002:80"
+    depends_on:
+      - scapp-auth
